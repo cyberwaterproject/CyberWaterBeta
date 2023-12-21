@@ -1,0 +1,17 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>ParameterEntry</h2></i> Prepares the inputs for the parameter files. <br>
+This module needs to be used in conjunction with the <i>StaticParameterAgent</i> module. <br>
+All parameter entries inputs of <i>StaticParameterAgent</i> are created by this module<br><br>
+<b><u>Parameter_Value: </u></b>Values to add to the parameter file. <br>
+It can be either a <b>python function</b>, <br>
+the <b>path</b> of a MSM ASCII map (which would require to specify the limits), <br>
+an individual <b>numeric</b> constant, or <br>
+a <b>list</b> of numeric values. <br>
+<b><u>Parameter_Type: </u></b>FUNCTION, MAP, NUMERIC, LIST. <br>
+<b><u>Operation: </u></b> Operation applied to the incoming data (i.e x*0.5 will compute half of the input values).Implemented with the 'Eval()' python function. <br>
+<b><u>Parameter_format: </u></b> Python format of the values (i.e %.3f is a float with 3 numbers after the point).See [https://docs.python.org/2.4/lib/typesseq-strings.html] for more documentation.<br>
+<b><u>Parameter_Position: </u></b>Sets the column index where the values will be saved in the parameter file <br> 
+If the Entry is a MAP, the user can either set 1 value: the Z in the map. Or 3 values:longitude, latitude, Z in this order.<br>
+<b><u>Map_limits: </u></b>Coordinate limits. Only necessary if the entry is a MAP. Format:north, west, south, east. <br>
+<b><u>Operation: </u></b>[Optional] Operation that the values \x\ will go. i.e (2*x+1) will double the values and add 1. <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

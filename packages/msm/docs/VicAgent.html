@@ -1,0 +1,29 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>VicAgent</h2></i> creates a full simulation of the Variable Infiltration Capacity (VIC) model. <br>
+VIC is a macroscale hydrologic model that solves full water and energy balances. <br>
+<br>
+If the user only wants to perform a water balance VIC simulation, only 4 forcing inputs need to <br>
+be included: [Minimum Temperature, Maximum Temperature, Total Precipitation, Wind Speed]. <br>
+However, if full water and energy balance VIC simulation is required, the user should include 7<br>
+forcing inputs: [Air Temperature, Short-wave radiation, Long-wave radiation, Precipitation, Pressure,<br>
+Water-vapor pressure, and Wind Speed]. <br>
+The VIC Agent requires that all forcing inputs display the same spatial extent and temporal resolution. <br>
+Full VIC documentation available at [https://vic.readthedocs.io/en/master/].<br>
+<br>
+[INPUTS]<br>
+<b><u>AIR_TEMP: </u></b>[C] Air Temperature.<br>
+<b><u>LWDOWN: </u></b>[W/m^2] Long-wave downwards radiation.<br>
+<b><u>SWDOWN: </u></b>[W/m^2] Short-wave downwards radiation.<br>
+<b><u>PREC: </u></b>[mm] Total Precipitation per time-step.<br>
+<b><u>PRESSURE: </u></b>[kPa] Atmospheric Pressure.<br>
+<b><u>TMAX: </u></b>[C] Maximum Temperature measured during each time-step.<br>
+<b><u>TMIN: </u></b>[C] Minimum Temperature measured during each time-step.<br>
+<b><u>VP: </u></b>[kPa] Water-vapor pressure.<br>
+<b><u>WIND: </u></b>[m/s] Total magnitude of Wind Speed.<br>
+<b><u>working_directory: </u></b>[Optional] Folder where the VIC simulation files will be created.<br>
+The default folder will be at ['.\vistrails\packages\msm\utils\uploaded\user_model_agents\VicAgent\tmp'].<br>
+<br>
+[OUTPUTS]<br>
+For a complete list of the available outputs, please visit [https://vic.readthedocs.io/en/master/<br>
+Documentation/Drivers/Classic/FluxOutputFiles/]<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

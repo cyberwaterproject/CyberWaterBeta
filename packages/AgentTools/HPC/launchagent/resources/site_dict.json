@@ -1,0 +1,126 @@
+{
+    "ssh_agent":{
+        "sites": {
+            "bigred3": {
+                "sched_env": "slurm",
+                "login_url": "bigred3.uits.iu.edu",
+                "username": "lifen",
+                "defaultpartition": "general",
+                "su_per_corehour": 1,
+                "nu_per_su": 0,
+                "core_speed": 42.45
+            },
+            "gcp": {
+                "sched_env": "slurm",
+                "login_url": "35.192.15.248",
+                "username": "fli5",
+                "defaultpartition": "debug"
+            },
+            "jetstream": {
+                "sched_env": "slurm",
+                "username": "fli5",
+                "login_url":"149.165.156.187",
+                "defaultpartition": "cloud"
+            },
+            "bridges2": {
+                "sched_env": "slurm",
+                "username": "fli5",
+                "login_url":"bridges2.psc.edu",
+                "defaultpartition": "RM",
+                "workdir":"$PROJECT",
+                "su_per_corehour": 1,
+                "nu_per_su": 173,
+                "core_speed": 54.38
+            },
+            "bridges2-shared": {
+                "sched_env": "slurm",
+                "username": "fli5",
+                "login_url":"bridges2.psc.edu",
+                "defaultpartition": "RM-shared",
+                "workdir":"$PROJECT",
+                "cores_maximum": 64,
+                "su_per_corehour": 1,
+                "nu_per_su": 173,
+                "core_speed": 54.38
+            },
+            "stampede2-skx": {
+                "sched_env": "slurm",
+                "login_url": "login2.stampede2.tacc.utexas.edu",
+                "username": "tg837458",
+                "defaultpartition": "skx-normal",
+                "workdir":"$SCRATCH",
+                "slurm_directive_str":"#SBATCH -A TG-EAR200001",
+                "su_per_corehour": 0.021,
+                "nu_per_su": 3101,
+                "core_speed": 44.80
+
+            },
+            "stampede2-knl": {
+                "sched_env": "slurm",
+                "login_url": "login2.stampede2.tacc.utexas.edu",
+                "username": "tg837458",
+                "defaultpartition": "normal",
+                "workdir":"$SCRATCH",
+                "slurm_directive_str":"#SBATCH -A TG-EAR200001",
+                "su_per_corehour": 0.012,
+                "nu_per_su": 3101,
+                "core_speed": 0.5
+            },
+            "sievert": {
+                "sched_env": "bash",
+                "login_url": "sievert.cs.iupui.edu",
+                "username": "lifen"
+            },
+            "rain": {
+                "sched_env": "bash",
+                "login_url": "rain.cs.iupui.edu"
+            },
+            "thunder": {
+                "sched_env": "bash",
+                "login_url": "thunder.cs.iupui.edu"
+            },
+            "lightning": {
+                "sched_env": "bash",
+                "login_url": "lightning.cs.iupui.edu"
+            },
+            "jetstream-not-working": {
+                "sched_env": "bash",
+                "username": "fli5",
+                "login_url":"149.165.156.187",
+                "defaultpartition": "cloud"
+            },
+            "thunder-not-working": {
+                "sched_env": "slurm",
+                "login_url": "thunder.cs.iupui.edu"
+            },
+            "Customized": {
+                "sched_env": "bash"
+            }
+        }
+    },
+    "gateway_agent": {
+        "sites": {
+            "bridges2":{
+                "group_resource_profile_name": "cyberwater-hpc-resource",
+                "url": "Bridges2",
+                "queue_name": "RM"
+            },
+            "bridges2-shared":{
+                "group_resource_profile_name": "cyberwater-hpc-resource",
+                "url": "Bridges2",
+                "queue_name": "RM-shared"
+            },
+            "bigred3":{
+                "group_resource_profile_name": "cyberwater-hpc-resource",
+                "url": "bigred3.uits.iu.edu",
+                "queue_name": "general"
+            },
+            "carbonate":{
+                "group_resource_profile_name": "cyberwater-hpc-resource",
+                "url": "carbonate.uits.iu.edu",
+                "queue_name": "debug"}
+        },
+        "gateway_id": "cyberwater",
+        "storage_id": "pgadev.scigap.org_7ddf28fd-d503-4ff8-bbc5-3279a7c3b99e"
+    }
+}

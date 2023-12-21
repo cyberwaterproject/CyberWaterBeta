@@ -1,0 +1,17 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>FileToDataset</h2></i> Creates a single dataset from a single file containing a timeseries .<br>
+The file must have a single column with no headers, and contain only numerical values<br>
+<br>
+[INPUTS]<br>
+<b><u>01_case_study</u></b>: Set of TimeRange-Space range for your simulation.<br>
+<b><u>02_variable_name</u></b>: Name of the variable that will be stored in the dataset. i.e. precipitation, temperature, etc..<br>
+(this value is only used as label and does not play a role in the calculations.)<br> 
+<b><u>03_filename</u></b>: File containing the column of values.<br>
+<b><u>04_units</u></b>: [Optional] Units of the dataset that will be uploaded. This value will be used only as a label.<br>
+<b><u>05_column_index</u></b>: [Optional] The column that will be uploaded as the new Dataset. Default = 0.<br>
+<b><u>06_empty_symbol</u></b>: [Optional] String representation of empty (NULL, None) values.<br>
+<b><u>07_ready?</u></b>: [Optional] True/False flag used if the user wants to time the execution of this module after another module is done.<br>
+<br>
+[OUTPUTS]<br>
+<b><u>out_dataset_name</u></b>: The name of the resulting dataset.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

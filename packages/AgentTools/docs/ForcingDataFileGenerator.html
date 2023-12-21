@@ -1,0 +1,30 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>ForcingDataFileGenerator</h2></i> Organizes the forcing data brought by the <i>MainGenerator</i>. <br>
+The user should be aware of the expected format of the forcing data for their model.<br>
+By default, this module creates forcing data in a folder names 'Forcing'. Such forcing data is <br>
+always created as timeseries where different columns hold different variables, ie: <br>
+(Precipitation_t0 | Temerature_t0 | Wind_t0, etc) <br>
+(Precipitation_t1 | Temerature_t1 | Wind_t1, etc) <br>
+(Precipitation_t2 | Temerature_t2 | Wind_t2, etc) <br>
+(Precipitation_t3 | Temerature_t3 | Wind_t3, etc) <br>
+and the data is divided in different files, were each one represents a single cell of the forcing inputs. <br>
+So, a 2 by 2 (2x2) model will generate 4 files, each one with the full timeseries of the forcing data.<br>
+<br>
+[INPUTS]<br>
+<b><u>WD_Path: </u></b>This is the working folder provided by the <i>MainGenerator</i> module.<br>
+<b><u>DataSet_Class: </u></b>This is the dataset information provided by the <i>MainGenerator</i> module.<br>
+<b><u>Forcing_Folder_Name: </u></b>[Optional] Name of the subfolder where the forcing info will be stored. [Default = Forcing]<br>
+<b><u>Forcing_File_Prefix: </u></b>[Optional] Prefix for the name of the forcing files. [Default = data].<br>
+<b><u>Date_Label_Format: </u></b>[Optional] Format taken for the dates of the first column. <br>
+<b><u>Subrange: </u></b>[Optional] Subset of the dataset by giving the boundary limitation including x_min, x_max, y_min, y_max. <br>
+<b><u>Mask_File: </u></b>[Optional] Mask file for generating specific forcing data files, there are two types of mask files, which are inclusive and exclusive.
+In the mask file, it records the latitude and longitude of the cell each line, and for inclusive mask file, the ForcingDataFileGenerator module will only
+yield the forcing data files of the certain cell given in mask file. and in reverse, the exclusive mask file provided to create the forcing data files of the cells which is excluded in the mask file.
+The format of the mask file, should be [latitude],[longitude] each line, and user can make comment freely in any other line.<br>
+
+(i.e 05/16/1997-05:30:00 can be expressed as %m/%d/%YYYY-%H:%M:%S )[Default = None] The files will not have dates. <br>
+For more information about python date formats go to [https://strftime.org/] <br>
+<br>
+[OUTPUTS]<br>
+<b><u>Ready:</u></b> (True/False) starting flag for <i>RunModuleAgent</i>.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

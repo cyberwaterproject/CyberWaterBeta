@@ -1,0 +1,16 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br> 
+<i><h2>RoutingParameterFile</h2></i> creates a table parameter file, taking information from one or more tables. <br> 
+All parameter entries inputs of <i>TableParameterAgent</i> are created by this module<br><br>
+<b><u>space_range: </u></b> Output of an SpaceRange component. This should be the same as the one used for the forcing datasets. <br> 
+<b><u>grass_engine: </u></b> Output of the GrassEngine component. <br> 
+<b><u>resolution: </u></b> resolution used to generate the draining network. <br> 
+<b><u>outlet: </u></b> (longitude,latitude) coordinates of the outlet of the basin in the DEM. <br> 
+<b><u>directory: </u></b> Folder where the routing parameter file will be created. <br> 
+<b><u>DEM_path: </u></b> Path of the file that contains the DEM data in ASCII format.<br> 
+<b><u>DEM_limits: </u></b> (north, west, south, east).<br>
+<b><u>x: </u></b> Muskingum wedge storage.<br> 
+<b><u>k: </u></b> Muskingum time of travel between the inflow and outflow [h].<br> 
+<br> 
+[OUTPUTS]<br> 
+<b>filePath:</b> full path of the routing file created.<br> 
+-----------------------------------------------------------------------------------------------------------------------<br>

@@ -1,0 +1,55 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br> 
+<i><h2>VICVegetationParamAgent</h2></i> Capable of creating a Vegetation Parameter File for VIC. <br> 
+It offers three different modes to create the vegetation parameter file:<ol> 
+<b><li>Default with user-custom LAI:</b>  
+  The veg_param file will contain the same vegetation types (2, 6, 7, 10, 11)in every<br> 
+  cell with the  <i>depths</i> and <i>roots</i> input as parameters. The LAI used comes<br> 
+  from the <i>LAI_cycle</i> parameter. Required parameters: <i>dem_map_name,depths,roots<br> 
+  LAI_cycle, directory, parameter_file_name</i>.</li><br> 
+<b><li>Full computation:</b>  
+  The vegetation cover of every cell in the map is computed.This process takes a couple<br> 
+  of seconds depending on the resolution of the vegetation map used.The LAI assgined to<br> 
+  each vegetation type is extracted from the vegetation library file. Please note that<br> 
+  both the veg-lib file and the vegetation map must share the same legend. The same<br> 
+  depths and roots are used for every cell. Required parameters: <i>dem_map_name, depths,<br> 
+  roots, veg_lib_file, veg_map_file, veg_map_limits, GIS_engine, directory, parameter_file_name.</i></li><br> 
+<b><li>Update LAI only mode:</b> 
+  Takes an already-existing vegetation parameter file and only updates the LAI cycles of<br> 
+  each vegetation type, from the vegetation library file. Required parameters:<br> 
+  only_update_LAI(TRUE), veg_lib_file, directory, parameter_file_name<i></i>.</li> 
+</ol> 
+The default legend for the vegetation types is taken from the legend used by the Multi-Consortium <br> 
+Land Characteristics (MRLC) at [https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend]<br> 
+<br> 
+<b>VEGETATION LEGEND:</b><ol> 
+<li>Water</li> 
+<li>Urban - Open space</li> 
+<li>Urban - Low intensity</li> 
+<li>Urban - Medium intensity</li> 
+<li>Urban - High intensity</li> 
+<li>Barren Land</li> 
+<li>Deciduous forest</li> 
+<li>Evergreen forest</li> 
+<li>Mixed forest</li> 
+<li>Shrubs</li> 
+<li>Grassland</li> 
+<li>Pasture/Hay</li> 
+<li>Cultivated crops</li> 
+<li>Woody Wetlands</li> 
+<li>Emergent Herbaceous Wetlands</li> 
+</ol> 
+VEGETATION LIBRARY Docs: https://vic.readthedocs.io/en/master/Documentation/Drivers/Classic/VegLib/ <br>  
+VEGETATION PARAMET Docs: https://vic.readthedocs.io/en/master/Documentation/Drivers/Classic/VegParam/ <br> 
+< br >  
+<b><u>dem_map_name: </u></b> Path of the DEM map used to know how many cells the VIC model has. [Modes: 1 (default) and 2 (full)].<br> 
+<b><u>depths: </u></b>Depths of each one of the soil layers. Format: \D_1,D_2,...,D_n\. [Modes: 1 (default) and 2 (full)]<br>
+<b><u>directory: </u></b> Directory where the Vegetation parameter file will be created. <br> 
+<b><u>only_update_LAI: </u></b> Whether or not the parameter file will only have its LAI values updated. [Mode: 3(update LAI)]<br> 
+<b><u>parameter_file_name: </u></b> Name of the Vegetation parameter file. <br>
+<b><u>roots: </u></b> Percentage of roots on each one of the soil layers. Format: \r_1,r_2,...,r_n\. [Modes: 1 (default) and 2 (full)]<br>
+<b><u>veg_lib_file: </u></b>Path of the VIC Vegetation library file. [Modes: 2 (full) and 3 (update LAI)]<br> 
+<b><u>veg_map_file: </u></b>Path of the vegetation file. [Mode: 2 (full)]<br> 
+<b><u>veg_map_limits: </u></b>Coordinate limits. Only necessary Veg-map is given. Format: \north,west,south,east\. [Mode: 2 (full)]<br>
+<b><u>LAI_cycle: </u></b> 12-months LAI cycle. Only necessary when Veg-map is not given. Format: \JAN,FEB,MAR,...\. [Mode: 1 (default)]<br>
+<b><u>GIS_engine: </u></b>GRASS <i>GISEngine</i> ready to perform GIS operations. [Mode: 2 (full)]<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

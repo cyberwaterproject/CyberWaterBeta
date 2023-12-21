@@ -1,0 +1,20 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>RoutingAgent</h2></i> Performs hydrologic routing using the Muskingum method following the run of the<br>
+Variable Infiltration Capacity (VIC) model. The routing is performed both for hill-slope <br>
+elements corresponding to VIC cells, and for a network of channels. The network needs to be <br>
+defined in a text file with the format described below. The produced flow values are in m3/s.<br>
+<i><b>RoutingAgent</b></i> assumes a default initial state where none of the channels contain water.<br>
+The user is free to go to the working directory and provide an initial state file with the format:<br>
+'state_YYYYMMDD' Where YYYY, MM, and DD, are the year, month and day corresponding to the first day<br>
+of the simulation. If the workflow is executed wich such existing file, it will be used as initial state.<br>
+<br>
+[INPUTS]<br>
+<b><u>BASEFLOW</u></b>: [mm] Volume of water that comes out of the hydro-pixel in one timestept hrough sub-soil.<br>
+<b><u>RUNOFF</u></b>: [mm] Volume of water that comes out of the hydro-pixel in one timestep, on surface.<br>
+<b><u>Outlet_coordinate</u></b>: (longitude,latitude) Latitude, longitude coordinates of the outlet of the basin.<br>
+<b><u>working_directory</u></b>: [Optional] Folder where the routing simulation files will be created..<br>
+"The default folder will lie at ['.\vistrails\packages\msm\utils\uploaded\user_model_agents\RoutingAgent\tmp'].<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Streamflow</u></b>: [m3/s] Name of the Streamglow dataset <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

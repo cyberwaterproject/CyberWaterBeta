@@ -1,0 +1,11 @@
+<i>TableParameterAgent</i> creates a table parameter file, taking information from one or more tables. <br>
+All parameter entries inputs of <i>TableParameterAgent</i> are created by this module<br><br>
+<b><u>Parameter_Value: </u></b>Values to add to the parameter file.
+It can be either a <b>python function</b>,
+the <b>path</b> of a MSM ASCII map (which would require to specify the limits),
+an individual <b>numeric</b> constant, or
+a <b>list</b> of numeric values.<br>
+<b><u>Parameter_Type: </u></b>FUNCTION, MAP, NUMERIC, LIST.<br>
+<b><u>Parameter_Position: </u></b>Sets the column index where the values will be saved in the parameter file
+If the Entry is a MAP, the user can either set 1 value: the Z in the map. Or 3 values: \longitude, latitude, Z\ in this order.<br>
+<b><u>Map_limits: </u></b>Coordinate limits. Only necessary if the entry is a MAP. Format: \north, west, south, east\. <br>

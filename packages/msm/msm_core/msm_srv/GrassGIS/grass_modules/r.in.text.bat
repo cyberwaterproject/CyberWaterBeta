@@ -1,0 +1,1 @@
+@"%GRASS_PYTHON%"  "%0/../r.in.text.py" %*

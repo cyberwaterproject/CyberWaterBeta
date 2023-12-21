@@ -1,0 +1,14 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>AreaWiseParamGenerator</h2></i> Organizes the parameter files required for the execution of the model. <br>
+The user is responsible for the contents and format of the files provided.<br>
+This module only receives the files as parameters and places them in a file with a name set by the user.<br>
+By default, this module places the parameter files in a folder named 'Parameters'. <br>
+<br>
+[INPUTS]<br>
+<b><u>WD_Path: </u></b>This is the working folder provided by the <i>MainGenerator</i> module.<br>
+<b><u>Parameter_Folder_Name: </u></b> Name of the parameter folder that will be created. Default = Parameters <br>
+<b><u>File_In_<i>x</i> : </u></b> Path of the <i>x</i>-th parameter filex (x=00,01,02,...15).<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Ready: </u></b> (True/False) starting flag for <i>RunModuleAgent</i>.<br>
+-------------------------------------------------------------------------------------------------------------------------------<br>

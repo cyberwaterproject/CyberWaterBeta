@@ -1,0 +1,15 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>NasaAgent</h2></i> access the Earth Data services of NASA. <br>
+<b><u>dataset</b></u>: This corresponds to the Nasa dataset as listed here:  <br>
+http://hydro1.sci.gsfc.nasa.gov:80/dods/\t <br>
+Example: NLDAS_FORA0125_H.002\n <br>
+<b><u>empty_value</b></u>: Representation for missing data. It can be found in the 'info' link in front of each dataset.  <br>
+Example: https://hydro1.gesdisc.eosdis.nasa.gov/dods/NLDAS_FORA0125_H.002.info\n <br>
+For the above dataset, the empty value is: -9.99E8\n <br>
+<b><u>to_meters</b></u>: Factor used to convert the received values, for instance, into metric system (It can be used for any other unit conversion).   <br>
+For example, to convert the data at NLDAS_FORA0125_H.002 from kg-water/m^2 to m-water/m^2 'to_meters' = 0.001\n <br>
+<b><u>url</b></u>: Url given by the OpenDap provider, in the case of Nasa OpenDap:  <br>
+http://<usernameAtNasa>:<password>@hydro1.sci.gsfc.nasa.gov:80/dods/\n <br>
+<b><u>varname_at_src</b></u>: Name of the variable in the dataset. For the dataset NLDAS_FORA0125_H.002  <br>
+all of the following are valid variable names: apcpsfc, convfracsfc, dlwrfsfc, etc. <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

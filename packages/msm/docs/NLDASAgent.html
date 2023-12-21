@@ -1,0 +1,44 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>NLDASAgent</h2></i> access the Earth Data services of NASA. <br>
+NLDASAgent model offers various meteorological variables in an hourly basis, 1/8^o resolution.<br>
+You need to create an account on Earth Data following the link:<br>
+https://urs.earthdata.nasa.gov/<br>
+<br>
+<b>Projection:</b>Latitude, Longitude<br>
+<b>Spatial Coverage: </b>-125.0,25.0,-67.0,53.0<br>
+<b>Temporal Coverage: </b>1979-01-02 to 2020-05-25<br>
+<b>Spatial Resolution: </b>0.125 x 0.125 degrees<br>
+<b>Temporal Resolution: </b>Hourly<br>
+<br>
+[INPUTS]<br>
+<b><u>case_study:</u></b> Tuple of TimeRange-SpaceRange defining the spatio-temporal extent of the download.<br>
+The information downloaded will always fall inside these limits, in case the spatial information, or temporal<br>
+divisions do not fall exaclty at the limits set by the user in his or her 'studycase'.<br>
+<b><u>password:</u></b> Your Earth Data password credentials.<br>
+<b><u>username:</u></b> Your Earth Data username credentials.<br>
+<b><u>convert_to_dataset</u></b>: Flag on whether to convert the forcing data files to datasets to pass to the successive modules in CyberWater, The value is either <i>True</i> or <i>False</i>.<br>
+<b><u>rename_variable:</u></b> [Optional] Input used if you want to rename the variables name of this dataset. <br>
+<b><u>variableName:</u></b> The variables you want to download (including units), which can click multiple variables by clicking the '+' button on the left side. <br>
+Possible options:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Pressure [Pa]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Potential Evaporation [mm/h]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Specific Humidity [kg/kg]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Radiation Flux Long Wave [W/m^2]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Radiation Flux Short Wave [W/m^2]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Temperature [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total Precipitation [mm/h]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u-wind [m/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;v-wind [m/s]<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Pressure [Pa]:</u></b> Name of the Pressure downloaded dataset <br>
+<b><u>Potential Evaporation [mm/h]:</u></b> Name of the Potential Evaporation downloaded dataset <br>
+<b><u>Specific Humidity [kg/kg]:</u></b> Name of the Specific Humidity downloaded dataset <br>
+<b><u>Radiation Flux Long Wave [W/m^2]:</u></b> Name of the Radiation Flux Long Wave downloaded dataset <br>
+<b><u>Radiation Flux Short Wave [W/m^2]:</u></b> Name of the Radiation Flux Short Wave downloaded dataset <br>
+<b><u>Temperature [K]:</u></b> Name of the Temperature downloaded dataset <br>
+<b><u>Total Precipitation [mm/h]:</u></b> Name of the Total Precipitation downloaded dataset <br>
+<b><u>u-wind [m/s]:</u></b> Name of the u-wind downloaded dataset <br>
+<b><u>v-wind [m/s]:</u></b> Name of the v-wind downloaded dataset <br>
+Documentation at [https://hydro1.gesdisc.eosdis.nasa.gov/data/NLDAS/README.NLDAS2.pdf] <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

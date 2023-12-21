@@ -1,0 +1,37 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>DHSVMAgent</h2></i> creates a full simulation of the Distributed Hydrology Soil Vegetation Model. <br>
+A model that \"numerically represents with high spatial resolution the effects of local weather, topography, <br>
+soil type, and vegetation on hydrologic processes within watersheds.\" (Pacific Northwest Lab, 2019). <br>
+Documentation available at (https://dhsvm.pnnl.gov/index.stm) <br>
+<br>
+This version of the <i><b>DHSVMAgent</b></i> automatically creates the input files necessary to run the DHSVM. However, <br>
+it performs approximations to compute the sizes of the channels, as well as uses default values for <br>
+soil and vegetation properties. The user is free to use the generated files and modify them to fit their <br>
+specific simulation.<br>
+<br>
+[INPUTS]<br>
+<b><u>Pressure: </u></b>[Pa] Atmospheric Pressure.<br>
+<b><u>Precipitation: </u></b>[m] Total Precipitation per time-step.<br>
+<b><u>LongWave: </u></b>[W/m<sup>2</sup>] Long-wave downwards radiation.<br>
+<b><u>ShortWave: </u></b>[W/m<sup>2</sup>] Short-wave downwards radiation.<br>
+<b><u>SpecificHumidity: </u></b>[kg/kg] Specific humidity.<br>
+<b><u>Temperature: </u></b>[C] Ait Temperature.<br>
+<b><u>Wind: </u></b>[m/s] Minimum Temperature measured during each time-step.<br>
+<br>
+<b><u>DEM map: </u></b>Path to the DEM map <b>file</b>.<br>
+<b><u>vegetation map: </u></b>Path to the vegetation map <b>file</b>.<br>
+<b><u>soil map: </u></b>Path to the soil map <b>file</b>.<br>
+<b><u>soilDepth map: </u></b>Path to the soilDepth map <b>file</b>.<br>
+<b><u>outputCoordinates: </u></b> Latitude, longitude coordinates of the outlet of the basin in the DEM provided.<br>
+<b><u>resolution (m): </u></b> Target resolution for the model. The closer this number is to the real resolution, the more unstable the model gets.<br>
+<b><u>basinThreshold: </u></b> Number of cells in the DEM map that require to be accumulated before they turn into a strem.<br>
+<b><u>outputFlow (m<sup>3</sup>/s): </u></b> Flow of the channel at the outlet of the basin. This is used to dimension all the channels in proportion to this one.<br>
+<b><u>outputWitdh (m): </u></b> Width of the channel at the outlet of the basin. This is used to dimension all the channels in proportion to this one.<br>
+<b><u>minSlope: </u></b> Minimum slope allowed in the drainage network.<br>
+<b><u>manning: </u></b> Manning rugosity parameter used for all the streams.<br>
+<b><u>directory: </u></b>[Optional] Folder where the VIC simulation files will be created.<br>
+The default folder will lie at ['.\vistrails\packages\msm\utils\uploaded\user_model_agents\DHSVMAgent\tmp'].<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Streamflow: </u></b>[m3/timestep] Time series with the streamflow per simulated timestep at the outlet.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

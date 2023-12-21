@@ -1,0 +1,26 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>UsgsAgent</h2></i> access the Water Data for the Nation databse of the US Geological Survey (USGS). <br>
+Downloads the variable selected, available on all the stations inside the spatial extent defined.<br>
+Daily information can be manually accessed at [https://waterdata.usgs.gov/nwis/dv?referred_<br>
+module=sw&search_criteria=lat_long_bounding_box&submitted_form=introduction]<br>
+Instantaneous information can be manually accessed at [https://waterdata.usgs.gov/nwis/uv/?referred_module=sw]<br>
+<br>
+[INPUTS]<br>
+<b><u>case_study:</u></b> Tuple of TimeRange-SpaceRange defining the spatio-temporal extent of the simulation.<br>
+<b><u>url:</u></b> The default USGS URL used to download the values. The one that ends in 'dv/?' is for daily-values<br>
+whereas the one that ends in 'iv/?' is for instantaneous values (station-dependent time resolution).<br>
+<b><u>variable_code:</u></b> The code of the variable you want to download. Default = 00060 - Streamflow [ft<sup>3</sup>/s]. Full catalogue <br>
+available filling the form at: [https://nwis.waterdata.usgs.gov/usa/nwis/pmcodes].<br>
+<b><u>timeout:</u></b> Number of seconds we will wait for the server to reply. <br>
+<b><u>to_meters:</u></b> Factor by which to multiply the values to obtain meters. <br>
+<b><u>keep_original_timeseries:</u></b> Leave the time-series as it is?. <br>
+<b><u>force_finer_scale:</u></b> Force the Data Agent to use a finer time-resolution? <br>
+<b><u>remove_gauges_random:</u></b> Randomly remove gauges? <br>
+<b><u>remove_gauges_msm:</u></b> Experimental variable. <br>
+<b><u>remove_gauges_amount:</u></b> Removes the number of stations specified. <br>
+<b><u>amount_gauges_used:</u></b> Fixes the number of stations used. <br>
+<br>
+[OUTPUTS]<br>
+<b>dataset_name:</b> Name of the resulting downloaded dataset.<br>
+Documentation at [https://hydro1.gesdisc.eosdis.nasa.gov/data/NLDAS/README.NLDAS2.pdf] <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

@@ -1,0 +1,19 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>msmTimeRescale</h2></i> Changes the time resolution of a dataset.<br>
+This module does not modify the original dataset. It creates a new modified dataset instead.<br>
+<br>
+[INPUTS]<br>
+<b><u>original_resolution_type</u></b>: The time resolution type of the original dataset. Options: [Hourly, Monthly]. <br>
+<b>resolution_reset:</b><br>
+   <b><u>resolution_type:</u></b> The time resolution of the new dataset. Options: [Hourly, Daily,Weekly, Monthly, Yearly]. <br>
+   <b><u>resolution_number:</u></b> The granularity based on the resolution type of the new dataset, Default value is 1. <br>
+   <b>e.g.,</b> Translate the time resolution of a dataset from Hourly data to Daily data, user can click <b><i>Daily</i></b> and leave the text area of <b><i>resolution_number</i></b> blank,<br>
+                or choose the <b><i>Hourly</i></b> as the <b><i>resolution_type</i></b> and set <b><i>resolution_number</i></b> as 24. <br>
+<b><u>resolution_number</u></b>:The new variable that will be created by the operation.<br>
+<b><u>variable_type</u></b>: Variable-type of measurement. Options: [accumulated, average].<br>
+<b><u>dataset_name</u></b>: The dataset that will be used to create the one with different time resolution.<br>
+<b><u>new_variable_name</u></b>:The new variable that will be created by the operation.<br>
+<br>
+[OUTPUTS]<br>
+<b><u>resampled_dataset_name</u></b>:The name of the resulting dataset.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

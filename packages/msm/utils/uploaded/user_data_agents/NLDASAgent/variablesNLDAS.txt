@@ -1,0 +1,10 @@
+Potential Evaporation [mm/h]
+Pressure [Pa]
+Radiation Flux Long Wave [W/m^2]
+Radiation Flux Short Wave [W/m^2]
+Specific Humidity [kg/kg]
+Temperature [K]
+Total Precipitation [mm/h]
+u-wind [m/s]
+v-wind [m/s]
+All

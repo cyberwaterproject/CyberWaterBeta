@@ -1,0 +1,100 @@
+[
+  {
+    "exeFile": "r.in.ascii",
+    "command_name": "r.in.ascii",
+    "parameter_list":["input","output", "overwrite", "quiet"]
+  },
+  {
+    "exeFile": "msm\\msm_core\\msm_srv\\GrassGIS\\grass_modules\\r.in.text.bat",
+    "command_name": "r.in.text",
+    "parameter_list":["output", "path", "west", "north", "east", "south","overwrite","quiet"]
+  },
+  {
+    "exeFile": "r.in.gdal",
+    "command_name": "r.in.gdal",
+    "parameter_list":["output","input","memory","offset","num_digits","flags","overwrite","quiet"]
+  },
+  {
+    "exeFile": "r.patch",
+    "command_name": "r.patch",
+    "parameter_list":["input","output","overwrite","quiet"]
+  },
+  {
+    "exeFile": "r.resample",
+    "command_name": "r.resample",
+    "parameter_list":["input", "output","overwrite","quiet"]
+  },
+  {
+    "exeFile": "msm\\msm_core\\msm_srv\\GrassGIS\\grass_modules\\r.out.text.bat",
+    "command_name": "r.out.text",
+    "parameter_list":["input", "directory", "new_name"]
+  },
+  {
+    "exeFile": "g.gisenv",
+    "command_name": "g.gisenv",
+    "parameter_list":[]
+  },
+  {
+    "exeFile": "g.list",
+    "command_name": "g.list",
+    "parameter_list":[]
+  },
+  {
+    "exeFile": "r.watershed",
+    "command_name": "r.watershed",
+    "parameter_list":["elevation","drainage","stream","accumulation","threshold","memory","overwrite", "quiet", "flags"]
+  },
+  {
+    "exeFile": "msm\\msm_core\\msm_srv\\GrassGIS\\grass_modules\\m.dhsvm.bat",
+    "command_name": "m.dhsvm",
+    "parameter_list":["elevation","vegetation", "soil", "soil_depth", "directory", "met_file", "long_lat", "resolution", "threshold", "flow_out", "width_out", "min_slope", "manning","max_inf","overwrite"]
+  },
+  {
+    "exeFile": "r.mapcalc",
+    "command_name": "r.mapcalc",
+    "parameter_list":["expression","overwrite", "quiet"]
+  },
+  {
+    "exeFile": "r.out.bin",
+    "command_name": "r.out.bin",
+    "parameter_list":["input","output","bytes", "quiet"]
+  },
+  {
+    "exeFile": "g.region",
+    "command_name": "g.region",
+    "parameter_list":["ewres", "nsres"]
+  },
+  {
+    "exeFile": "r.water.outlet",
+    "command_name": "r.water.outlet",
+    "parameter_list":["input","output","coordinates","overwrite","quiet"]
+  },
+  {
+    "exeFile": "r.fill.dir",
+    "command_name": "r.fill.dir",
+    "parameter_list":["input","output","direction","overwrite","quiet"]
+  },
+  {
+    "exeFile": "msm\\msm_core\\msm_srv\\GrassGIS\\grass_modules\\r.stream.order.exe",
+    "command_name": "r.stream.order",
+    "parameter_list":["stream_rast","direction","elevation","accumulation","stream_vect","overwrite","quiet","flags"]
+  },
+  {
+    "exeFile": "g.region",
+    "command_name": "g.region.raster",
+    "parameter_list":["raster"]
+  },
+  {
+    "exeFile": "g.region",
+    "command_name": "g.region.zoom",
+    "parameter_list":["zoom"]
+  },
+  {
+    "exeFile": "r.out.bin",
+    "command_name": "r.out.bin",
+    "parameter_list":["input","output","bytes","quiet"]
+  }
+]
+
+
+

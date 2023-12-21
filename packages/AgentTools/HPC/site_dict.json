@@ -1,0 +1,27 @@
+{"bigred3": {
+    "login_url": "bigred3.uits.iu.edu",
+    "username": "lifen",
+    "defaultqueue": "general"
+},
+"gcp": {
+    "login_url": "35.192.15.248",
+    "username": "fli5",
+    "defaultqueue": "debug"
+},
+"jetstream": {
+    "username": "fli5",
+    "login_url":"149.165.156.187",
+    "defaultqueue": "cloud"
+},
+"bridges": {
+    "username": "fli5",
+    "login_url":"bridges.psc.edu",
+    "defaultqueue": "RM"
+},
+"bridges-LM": {
+    "username": "fli5",
+    "login_url":"bridges.psc.edu",
+    "defaultqueue": "LM",
+    "slurm_directive_str": "#SBATCH --mem=128G\n#SBATCH -A eaz3a1p \n"
+}
+}

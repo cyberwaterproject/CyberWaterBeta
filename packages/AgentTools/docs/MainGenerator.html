@@ -1,0 +1,28 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+ <i><h2>MainGenerator</h2></i> The first component of the Generic Model Agent tools. <br> 
+ This component is responsible for setting up the folder where the simulation will be performed. <br>
+ It receives all the forcing datasets as inputs. The order at which they are added matters, <br> 
+ since the final forcing files will display the data in the same order: <br> 
+ first Dataset_01, then Dataset_02, and so on. <br>
+ The purpose of the Generic Model Agent tools is to enable the integration of new Models into the <br>
+ CyberWater environment. Therefore, users are expected to be highly knowledgeable about the <br>
+ details of their own models if they want to perform an integration with the Generic tools. <br>
+<br>
+[INPUTS]<br>
+<b><u>01_Path:</u></b> Path of the folder where the files of the simulation will be created.<br>
+<b><u>02_GPF:</u></b> Path of the main configuration (global parameter) file for the simulation.<br>
+<b><u>03_Override?:</u></b> Flag on whether to override the original working directory, The value is either <i>True</i> or <i>False</i>.<br>
+<b><u>04_Ready:</u></b> Ready signal from precedent-connected modules, The value is either <i>True</i> or <i>False</i>.<br>
+<b><u>Dataset_x:</u></b> Dataset of the x-th forcing variable, (x=01,02,03,...,15).<br>
+<b><u>05_Mapping_Dataset:</u></b> Reset the indices of the input forcing datasets, e.g., To construct the routing model, user need to connected with the result dataset from VIC4 model, and the routing model needs to specify the indices of the input datasets.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Input Dataset Position:</u></b> The original position when the dataset is connected with MainGenerator module, e.g., the datasets are connected with "Dataset_01" and "Dataset_02" at the beginning. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Reset Dataset Index:</u></b> The index of the dataset in the integrated dataset_class user want to reset. e.g., the dataset_01 should be in the 6th column of the integrated dataset, and dataset_02 should be in the 7th column of the integrated dataset for the computational model. <br>
+In the case of routing model coupled with vic4 model, the input port <i>05_Mapping_Dataset</i> should be configured with two pairs of value:<br>
+&nbsp;&nbsp;(1) Input Dataset Position: 1; Reset Dataset Index: 6 <br>
+&nbsp;&nbsp;(2) Input Dataset Position: 2; Reset Dataset Index: 7 <br>
+
+<br>
+ [OUTPUTS]<br>
+ <b><u>WD_Path:</u></b> Folder where the execution will be performed.<br>
+ <b><u>DataSet_Class:</u></b> The information of the forcing datasets.<br>
+ -----------------------------------------------------------------------------------------------------------------------<br>

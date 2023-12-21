@@ -1,0 +1,15 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br> 
+<i><h2>ColumnEntry</h2></i> Prepares the inputs for the a table parameter file. <br> 
+This module needs to be used in conjunction with the <i>TableParameterAgent</i> module. <br>
+All parameter entries inputs of <i>TableParameterAgent</i> are created by this module<br><br>
+<b><u>Column_Value: </u></b>Values to add to the table parameter file. 
+Values can come from ither a <b>python function</b>, 
+the <b>path</b> of a ASCII table (which would require to specify the columnIndexes), 
+an individual <b>numeric</b> constant, or
+a <b>list</b> of numeric constant values.<br>
+<b><u>Column_Type: </u></b>FUNCTION, TABLE, NUMERIC, LIST.<br>
+<b><u>Column_Position: </u></b>Sets the column index where the values will be saved in the parameter file.<br>
+If the Entry is a TABLE, the user can set 1 or list as many values as specified on Table_ColumnIndex.<br>
+<b><u>Table_ColumnIndex: </u></b>Index or indexes extracted from the source TABLE. Only required when <u>Column_Type</u> is Table. <br>
+<b><u>Operation: </u></b>[Optional] Operation that the values \x\ will go. i.e (2*x+1) will double the values and add 1. <br>
+-----------------------------------------------------------------------------------------------------------------------<br>

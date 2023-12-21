@@ -1,0 +1,11 @@
+Baseflow flux: [mm/s],BASEFLOW
+Greeness fraction: [-],GRN
+Latent heat flux: [W/m2],LHLAND
+Leaf Area Index: [m2/m2],LAI
+Soil Temp Layer 1: [K],TSOIL1
+Soil Temp Layer 2: [K],TSOIL2
+Soil Temp Layer 3: [K],TSOIL3
+Soil Temp Layer 4: [K],TSOIL4
+Soil Temp Layer 5: [K],TSOIL5
+Soil Temp Layer 6: [K],TSOIL6
+Total precipitation land: [mm/s],PRECTOTLAND

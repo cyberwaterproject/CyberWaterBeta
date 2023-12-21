@@ -1,0 +1,21 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>msmMetaDataAgent</h2></i> module displays the metadata of a given dataset. <br>
+The metadata of a certain dataset can be display in a "Metadata Viewer" windows for detail information<br>
+User can connect the following modules with corresponding output ports for needed meta,<br>
+notable, user can connected with RoutingParameter File module to get the updated space range of the dataset retrieved with <i><b>NLDASAagent</b></i>, by connecting it to the "SpaceRange" output port of msmMetaDataAgent module.<br>
+<br>
+
+[INPUTS]<br>
+<b><u>Dataset: </u></b>The name of the dataset.<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Base/Horizontal Resolution: </u></b>The horizontal resolution of the dataset<br>
+<b><u>Side/Vertical Resolution: </u></b>The vertical resolution of the dataset<br>
+<b><u>Step/Time Delta: </u></b>The time delta of the dataset<br>
+<b><u>Variable: </u></b>The variable name of the dataset<br>
+<b><u>Unit: </u></b>The unit of the dataset<br>
+<b><u>TimeRange: </u></b>The starting time and the ending time of the dataset, which can be connected with <i><b>SpaceRange</b></i> module<br>
+<b><u>SpaceRange: </u></b>The boundary values for west-end, east-end, north-end, south-end respectively of the dataset, which can be connected with <i><b>RoutingParameterFile</b></i> module to pass the updated SpaceRange of NLDASAgent module.
+<br>
+-----------------------------------------------------------------------------------------------------------------------<br>
+

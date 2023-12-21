@@ -1,0 +1,19 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>msmShowChart</h2></i> Creates a <i>matplotlib</i> timeseries chart, using the average values of a dataset. <br>
+Each point in the time-series is the average of the spatial map of the dataset.<br>
+<br>
+[INPUTS]<br>
+<b><u>dataset_names_mainAxis</u></b>: All the datasets that the user wants to plot in the left axis.<br>
+<b><u>dataset_names_secondaryAxis</u></b>: All the datasets that the user wants to plot in the right axis.<br>
+<b><u>units</u></b>:[Optional] The resulting units of your operation.<br>
+<b><u>scale_font</u></b>:[Optional] Factor to scale the size of the fonts in the chart: Legend, Axis values, and Axis Labels.<br>
+<b><u>variable_name</u></b>:[Optional] The name at the left axis ()recommended when only 1 axis is used.<br>
+<b><u>line_type</u></b>:[Optional] '[marker][line][color]' The pattern used to draw the timeseries.<br>
+Some examples: [marker]:('.', ',', '*', '^', 'D'),[line]:('-', '--', ':'),[color]:(b,g,r,k,y,c).<br>
+For more details, see the Notes at the bottom of [https://matplotlib.org/3.2.1/api/_as_gen/<br>
+matplotlib.pyplot.plot.html#matplotlib.pyplot.plot].<br>
+<b><u>vertical_range</u></b>:[Optional] The new limits of the vertical axis of the plot, separated by a comma. Format: min,max.<br>
+<br>
+[OUTPUTS]<br>
+No outputs.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

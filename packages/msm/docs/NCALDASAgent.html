@@ -1,0 +1,59 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>NCALDASAgent</h2></i> access the Earth Data services of NASA. <br>
+NCALDAS model offers various hydro-meteorological variables in a daily basis, 1/8 degree resolution.<br>
+You need to create an account on Earth Data following the link:<br>
+https://urs.earthdata.nasa.gov/<br>
+<br>
+<b>Projection: </b>Latitude, Longitude<br>
+<b>Spatial Coverage: </b>-125.0,25.0,-67.0,53.0(W,N,E,S)<br>
+<b>Temporal Coverage: </b>1979-01-02 to 2016-12-31<br>
+<b>Spatial Resolution: </b>0.125 x 0.125 degrees<br>
+<b>Temporal Resolution: </b>Daily<br>
+<br>
+[INPUTS]<br>
+<b><u>case_study:</u></b> Tuple of TimeRange-SpaceRange defining the spatio-temporal extent of the download.<br>
+The information downloaded will always fall inside these limits, in case the spatial information, or temporal<br>
+divisions do not fall exaclty at the limits set by the user in his or her 'studycase'.<br>
+<b><u>password</u></b>: Your Earth Data password credentials.<br>
+<b><u>username</u></b>: Your Earth Data username credentials.<br>
+<b><u>rename_variable:</u></b> [Optional] Input used if you want to rename the variable name of this dataset. <br>
+<b><u>variableName</u></b>: The variable you want to download (including units). <br>
+Possible options:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Baseflow-groundwater runoff: [mm/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Storm surface runoff: [mm/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Pressure [Pa]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Evapotranspiration: [mm/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Temperature: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Temperature Min: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Temperature Max: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total Precipitation Rate: [mm/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Wind speed: [m/s]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil temperature 0-10cm: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil temperature 10-40cm: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil temperature 40-100cm: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil temperature 100-200cm: [K]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil moisture 0-10cm: [m^3/m^3]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil moisture 10-40cm: [m^3/m^3]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil moisture 40-100cm: [m^3/m^3]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Soil moisture 100-200cm: [m^3/m^3]<br>
+<br>
+[OUTPUTS]<br>
+<b><u>Baseflow-groundwater runoff [mm/s]: </u></b>Name of the Baseflow-groundwater runoff downloaded dataset.<br>
+<b><u>Storm surface runoff [mm/s]: </u></b>Name of the Storm surface runoff downloaded dataset.<br>
+<b><u>Pressure [Pa]</u></b>: </u></b>Name of the Pressure downloaded dataset.<br>
+<b><u>Evapotranspiration [mm/s]: </u></b>Name of the Evapotranspiration downloaded dataset.<br>
+<b><u>Temperature [K]: </u></b>Name of the Temperature downloaded dataset.<br>
+<b><u>Temperature Min [K]: </u></b>Name of the Temperature Min downloaded dataset.<br>
+<b><u>Temperature Max [K]: </u></b>Name of the Temperature Max downloaded dataset.<br>
+<b><u>Total Precipitation Rate [mm/s]: </u></b>Name of the Total Precipitation Rate downloaded dataset.<br>
+<b><u>Wind speed [m/s]: </u></b>Name of the Wind speed downloaded dataset.<br>
+<b><u>Soil temperature 0-10cm [K]: </u></b>Name of the Soil temperature 0-10cm downloaded dataset.<br>
+<b><u>Soil temperature 10-40cm [K]: </u></b>Name of the Soil temperature 10-40cm downloaded dataset.<br>
+<b><u>Soil temperature 40-100cm [K]: </u></b>Name of the Soil temperature 40-100cm downloaded dataset.<br>
+<b><u>Soil temperature 100-200cm [K]: </u></b>Name of the Soil temperature 100-200cm downloaded dataset.<br>
+<b><u>Soil moisture 0-10cm [m^3/m^3]: </u></b>Name of the Soil moisture 0-10cm downloaded dataset.<br>
+<b><u>Soil moisture 10-40cm [m^3/m^3]: </u></b>Name of the Soil moisture 10-40cm downloaded dataset.<br>
+<b><u>Soil moisture 40-100cm [m^3/m^3]: </u></b>Name of Soil moisture 40-100cm downloaded dataset.<br>
+<b><u>Soil moisture 100-200cm [m^3/m^3]: </u></b>Name of the Soil moisture 100-200cm downloaded dataset.<br>
+Documentation at [https://hydro1.gesdisc.eosdis.nasa.gov/data/NCALDAS/NCALDAS_NOAH0125_D.2.0/doc/README_NCALDAS2.pdf]
+-----------------------------------------------------------------------------------------------------------------------<br>

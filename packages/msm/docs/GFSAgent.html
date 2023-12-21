@@ -1,0 +1,21 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>GFSAgent</h2></i> Access the Global Forecast System from NOAA to obtain global data of. <br>
+more than 360 variables. 105 major ones are in the list, but the user can search for specific ones.<br>
+GFS works with dates available at UTC time.<br>
+https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs<br>
+<br>
+<b>Projection: </b>Latitude, Longitude<br>
+<b>Spatial Coverage: </b>GLOBAL: -180,90,180,-90 (W,N,E,S)<br>
+<b>Temporal Coverage: </b> FROM NOW-144 hours TO NOW+9 days <br>
+<b>Spatial Resolution: </b>0.25 x 0.25 degrees<br>
+<b>Temporal Resolution: </b>Hourly<br>
+<br>
+[INPUTS]<br>
+<b><u>01_case_study: </u></b>Tuple of TimeRange-SpaceRange defining the spatio-temporal extent of the download.<br>
+<b><u>grass_engine: </u></b>Connection to the local GRASS GIS.<br>
+<b><u>reference_date: </u></b> (UTC) Date at which the requested forecast was created.<br>
+<b><u>delete_files?: </u></b>Check to delete the local files created.<br>
+<b><u>variable_name: </u></b>Variable to download. The user can plug a String module with a name that is <br>
+not included in the list. The full list of variables is available at <br>
+CyberWater\VisTrails\vistrails\packages\msm\utils\uploaded\user_data_agents\GFSAgent\GFS variables.txt<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

@@ -1,0 +1,18 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>MATLABEngine</h2></i> This module simply creates a single MATLAB Engine object.<br>
+All modules that require the use of MATLAB will require a MATLAB Engine<br>
+CyberWater embeds <i>matlab.engine</i> package, which is the MATLAB Engine API for Python provides a package for Python
+to call MATLAB as a computational engine to enable users to start a MATLAB process, pass
+data, and call functions executed by MATLAB. Moreover, The MATLABEngine module is developed to allow users to simply
+configure the working location of the MATLAB model in the
+RunModuleAgent module and to connect the MATLABEngine
+module to the input "Engine" port of the RunModuleAgent module.
+The MATLABEngine module will start a MATLAB session to
+execute the specified model once the entire workflow begins
+executing. Once the workflow finishes, the MATLAB session will
+close, and the MATLAB engine will stop automatically.
+
+<br>
+<b>[OUTPUTS]</b><br>
+<b>MATLABEngine:</b> A connection to the MATLAB Engine.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

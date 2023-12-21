@@ -1,0 +1,17 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>DirToDataSet</h2></i> Creates a single dataset from a folder, each file is a timestep .<br>
+The files must comply with the format for their file names: YYYY_MM_DD_HH_mm_SS.<br>
+No other files should be stored in the directory.<br>
+<br>
+[INPUTS]<br>
+<b><u>01_space_range</u></b>: Set of TimeRange-Space range for your simulation.<br>
+<b><u>02_variable_name</u></b>: Name of the variable that will be stored in the dataset. i.e. precipitation, temperature, etc..<br>
+(this value is only used as label and does not play a role in the calculations.)<br> 
+<b><u>03_dirname</u></b>: Path where the dataset information is stored..<br>
+<b><u>04_units</u></b>: [Optional] Units of the dataset that will be uploaded. This value will be used only as a label.<br>
+(this value is only used as label and does not play a role in the calculations.)<br> 
+<b><u>05_empty_symbol</u></b>: [Optional] String representation of empty (NULL, None) values.<br>
+<br>
+[OUTPUTS]<br>
+<b><u>out_dataset_name</u></b>: The name of the resulting dataset.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

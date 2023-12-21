@@ -1,0 +1,19 @@
+---------------------------------- CYBERWATER DOCUMENTATION ---------------------------------------------<br>
+<i><h2>DockerImage</h2></i> This module simply creates a single Docker object.<br>
+All modules that require to execute Docker images will require a DockerImage module to indicate the image needed or needed to pull from Docker hub. To use this module, user needs install the Docker in advance, and start the Docker engine while executing the docker container within the CyberWater.<br>
+
+<br>
+
+<b>[INPUTS]</b><br>
+<b><u>Image: </u></b> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Existing Images</u></b>: Select an existing images from the local machine.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Pull a new images</u></b>: Pull a new images from remote docker hub.<br>
+GRASS GIS is not installed in the default path on your Operative System <i>C:\Program Files\GRASS GIS 7.2.0\grass72.bat</i><br>
+<b><u>Volume Mounts: </u></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Source</u></b>: Path where the file or directory is stored in the local machine.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Destination</u></b>: Path where the file or directory is mounted in the container.<br>
+
+<br>
+<b>[OUTPUTS]</b><br>
+<b>DockerImage:</b> Provide a connection output port to the Docker engine.<br>
+-----------------------------------------------------------------------------------------------------------------------<br>

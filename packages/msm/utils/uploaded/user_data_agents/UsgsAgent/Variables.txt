@@ -1,0 +1,663 @@
+00004,Stream width,ft
+00010,Temperature,deg C
+00011,Temperature,deg F
+00012,Evaporation temperature,deg C
+00013,Evaporation temperature,deg C
+00014,Wet bulb temperature,deg C
+00020,Temperature,deg C
+00021,Temperature,deg F
+00025,Barometric pressure,mm/Hg
+00030,Incident solar radiation intensity,cal/cm2/d
+00031,Incident light remaining at depth,%
+00032,Cloud cover,%
+00034,Depth to 1 percent of surface light,ft
+00035,Wind speed,mph
+00036,Wind direction,Deg
+00045,Precipitation,in
+00046,Precipitation,in/week
+00047,Total partial pressure of dissolved gases,mm/Hg
+00048,Total partial pressure of dissolved gases,%
+00049,Surface area,mi2
+00050,Evaporation total,inches/day
+00051,Surface area,ft2
+00052,Relative humidity,%
+00053,Surface area,ac
+00055,Stream velocity,ft/sec
+00056,Flow rate of well,gal/day
+00058,Flow rate of well,gal/min
+00059,Flow rate,gal/min
+00060,Discharge,ft3/s
+00061,Discharge,ft3/s
+00062,Elevation of reservoir,ft
+00064,Mean depth of stream,ft
+00065,Gage height,ft
+00067,Tide stage,code
+00070,Turbidity,JTU
+00072,Stream stage,m
+00074,Light transmission,%
+00075,Turbidity,mg/l SiO2
+00076,Turbidity,NTU
+00077,Transparency,in
+00078,Transparency,m
+00080,Color,PCU
+00081,Apparent color,PCU
+00085,Odor at room temperature,TON
+00086,Odor at 60 degrees Celsius,TON
+00090,Oxidation reduction potential,mV
+00094,Specific conductance,uS/cm @25C
+00095,Specific conductance,uS/cm @25C
+00096,Salinity,mg/mL @25C
+00117,Precipitation,minutes
+00118,Precipitation,in
+00119,Precipitation,in
+00120,Precipitation,in
+00121,Precipitation,in
+00122,Precipitation,in
+00123,Precipitation,in
+00124,Precipitation,in/hr
+00125,Precipitation,in/hr
+00126,Precipitation,in/hr
+00127,Precipitation,in/hr
+00128,Precipitation,in/hr
+00129,Precipitation,in/hr
+00164,Flow,gal/batch
+00193,Precipitation total for defined period,in
+00196,Wind run,mi
+00197,Evaporation,in
+00198,Depth to 10 percent of surface light,ft
+00199,Depth to 50 percent of surface light,ft
+00200,Incident light intensity,uE/m2/sec
+00201,Incident light,uEinst/m2
+00294,Chemical oxygen demand,mg/kg
+00296,Chemical oxygen demand,mg/kg
+00297,Chemical oxygen demand,mg/kg
+00302,Immediate oxygen demand,mg/l
+00310,Biochemical oxygen demand,mg/l
+00315,Biochemical oxygen demand,mg/l
+00319,Ultimate biochemical oxygen demand,mg/l
+00320,Ultimate carbonaceous biochemical oxygen demand,mg/l
+00321,Ultimate nitrogenous biochemical oxygen demand,mg/l
+00324,Biochemical oxygen demand,mg/l
+00325,Deoxygenation constant (k1 to base e),per day
+00330,Reoxygenation constant (k2 to base e),per day
+00335,Chemical oxygen demand,mg/l
+00339,Chemical oxygen demand,mg/kg
+00340,Chemical oxygen demand,mg/l
+00349,Biochemical oxygen demand,mg/l
+00359,Biochemical oxygen demand,mg/l
+00367,Chemical oxygen demand,mg/l
+00400,pH,std units
+00401,Cations minus anions,meq
+00402,Specific conductance,uS/cm
+00403,pH,std units
+00408,pH,std units
+00434,pH adjusted to 25 degrees Celsius,std units
+00480,Salinity,ppth
+00495,Moisture content,%
+00500,Total solids dried at 105 degrees Celsius,mg/l
+00505,Loss on ignition of total solids,mg/l
+00510,Total solids remaining after ignition,mg/l
+00515,Dissolved solids dried at 105 degrees Celsius,mg/l
+00520,Loss on ignition of dissolved solids,mg/l
+00525,Dissolved solids remaining after ignition,mg/l
+00530,Suspended solids,mg/l
+00535,Loss on ignition of suspended solids,mg/l
+00540,Suspended solids remaining after ignition,mg/l
+00545,Settleable solids,mg/l
+00548,Non-settleable solids remaining after ignition,mg/l
+00549,Loss on ignition of non-settleable solids,mg/l
+00898,Carbonate hardness,mg/l CaCO3
+00900,Hardness,mg/l CaCO3
+00901,Carbonate hardness,mg/l CaCO3
+00902,Noncarbonate hardness,mg/l CaCO3
+00903,Noncarbonate hardness,mg/l CaCO3
+00904,Noncarbonate hardness,mg/l CaCO3
+00905,Noncarbonate hardness,mg/l CaCO3
+00906,Hardness,mg/l CaCO3
+00907,Hardness,mg/l CaCO3
+00908,Hardness,mg/l CaCO3
+00909,Hardness,mg/l CaCO3
+01305,Suds or foam,code
+01310,Gas bubbles,code
+01315,Floating sludge,code
+01320,Floating garbage,code
+01325,Floating algae mats,code
+01330,Odor,code
+01335,Sewage solids,code
+01345,Floating debris,code
+01350,Turbidity,code
+01351,Streamflow,code
+01355,Ice cover,code
+30205,Temperature,deg F
+30206,Temperature,deg C
+30207,Gage height,m
+30208,Discharge,m3/sec
+30209,Discharge,m3/sec
+30210,Depth to water level,m
+30211,Elevation above NGVD 1929,m
+30212,Stage,ft
+30213,Stage,m
+30214,Pressure,count
+30267,Illumination,lm/ft2
+30334,Surface area,m2/g
+32290,Fluorescence transmission,%
+32291,UV fluorescence,RFU
+32292,UV fluorescence,RFU
+32293,UV fluorescence,RFU
+32294,UV fluorescence,RFU
+32295,Dissolved organic matter fluorescence (fDOM),ug/l QSE
+32296,Absorbance at 280 nm,AU/cm
+32297,Absorbance at 370 nm,AU/cm
+32298,Absorbance at 412 nm,AU/cm
+32299,Absorbance at 440 nm,AU/cm
+32300,Absorption spectral slope (Sag),None
+32301,Absorption spectral slope (Sag),None
+32302,Absorption spectral slope (Sag),None
+32303,Absorption spectral slope,None
+32304,Fluorescence,RU
+32305,Fluorescence,RU
+32306,Fluorescence,ug/l QSE
+32307,Fluorescence,RU
+32308,Fluorescence,ug/l QSE
+32309,Fluorescence,RU
+32310,Fluorescence,RU
+32311,Fluorescence,RU
+32312,Fluorescence Index,None
+32313,Humification Index,None
+32315,Chlorophyll fluorescence (fChl),RFU
+32316,Chlorophyll fluorescence (fChl),ug/l
+32319,Phycocyanin fluorescence (fPC),ug/l
+32321,Phycocyanin fluorescence (fPC),RFU
+32322,Dissolved organic matter fluorescence (fDOM),RFU
+32323,Phycoerythrin fluorescence (fPE),RFU
+32327,Absorbance at 254 nm,AU
+32328,Absorbance at 350 nm,AU
+32332,Fluorescence,RU
+32333,Fluorescence,RU
+34777,Exposed bedrock in streambed,%
+45001,Precipitation,days
+45002,Precipitation,days
+45003,Precipitation,days
+46253,pH,std units
+46311,Moisture content,%
+46514,Solar radiation,cal/cm2/mn
+46515,Solar radiation,cal/cm2/mn
+46516,Solar radiation,cal/cm2/mn
+46529,Precipitation,in
+49282,Moisture content,%
+49491,Moisture content,%
+49701,Transparency,ft
+49982,Bulk density,g/cm3
+49983,Mineral density,g/cm3
+49984,Rubbed fiber content,%
+49985,Marsh level movement,m
+49986,Degree of decomposition,code
+50011,Temperature,deg C
+50012,Compaction,ft
+50013,Compaction,ft
+50042,Discharge,gal/min
+50047,Flow,mgd
+50048,Flow,mgd
+50050,Flow,mgd
+50051,Flow rate,mgd
+50052,Flow total during composite period,Kgal
+50054,Storm water overflow volume,Mgal
+50086,Settleable solids,mL/L/hr
+50624,Absorbance,units/cm
+51331,Solids,%
+51332,Solids,%
+51333,Solids,%
+51334,Solids,%
+51335,Loss on ignition,%
+51336,Loss on ignition,%
+51337,Loss on ignition,%
+51338,Loss on ignition,%
+51339,Bulk density,g/cm3
+51340,Bulk density,g/cm3
+51341,Bulk density,g/cm3
+51342,Bulk density,g/cm3
+51343,Porosity,fraction
+51344,Porosity,fraction
+51345,Porosity,fraction
+51346,Porosity,fraction
+52723,Solids,%
+52724,Solids,%
+52725,Solids,%
+52726,Solids,%
+52727,Solids,%
+52728,Solids,%
+52729,Solids,%
+52730,Solids,%
+52731,Solids,%
+52732,Solids,%
+52733,Solids,%
+52734,Solids,%
+52735,Solids,%
+52736,Solids,%
+52737,Solids,%
+52738,Solids,%
+52739,Solids,%
+52740,Solids,%
+52741,Solids,%
+52742,Solids,%
+52743,Solids,%
+52744,Solids,%
+52745,Solids,%
+52746,Solids,%
+52747,Solids,%
+52748,Solids,%
+52749,Solids,%
+52750,Solids,%
+52751,Solids,%
+52752,Solids,%
+52753,Solids,%
+52754,Solids,%
+52755,Solids,%
+52756,Solids,%
+52757,Solids,%
+52758,Solids,%
+52759,Solids,%
+52887,Air-equilibrated pH,std units
+52901,Fluorescence,RU
+52902,Fluorescence,RU
+53048,Transparency,cm
+53049,Transparency,in
+61028,Turbidity,NTU
+61032,Carbonaceous biochemical oxygen demand,mg/l
+61168,Carbonaceous biochemical oxygen demand,mg/l
+61726,Absorbance,units/cm
+61727,Wind gust speed,knots
+61728,Wind gust speed,mph
+61729,Wind gust direction,Deg
+61920,Temperature,deg C
+62600,Water level elevation above NGVD 1929,ft
+62601,Water level elevation above NGVD 1929,ft
+62602,Barometric pressure,in/Hg
+62603,Barometric pressure,in/Hg
+62604,Barometric pressure,in/H2O
+62605,Barometric pressure,in/H2O
+62606,Barometric pressure,kPa
+62607,Barometric pressure,kPa
+62608,Total solar radiation,W/m2
+62609,Net solar radiation,W/m2
+62610,Groundwater level above NGVD 1929,ft
+62611,Groundwater level above NAVD 1988,ft
+62612,Groundwater level above NGVD 1929,m
+62613,Groundwater level above NAVD 1988,m
+62614,Reservoir elevation,ft
+62615,Reservoir elevation,ft
+62616,Reservoir elevation,m
+62617,Reservoir elevation,m
+62618,Lake or reservoir stage,m
+62619,Estuary elevation,ft
+62620,Estuary elevation,ft
+62621,Estuary elevation,m
+62622,Estuary elevation,m
+62623,Tide stage,ft
+62624,Tide stage,m
+62625,Wind speed,m/sec
+62846,Temperature,deg F
+62856,Discharge,ft3/s
+62923,Solids,%
+62924,Solids,%
+62925,Solids,%
+62926,Solids,%
+62927,Solids,%
+62928,Solids,%
+62929,Solids,%
+62930,Solids,%
+62931,Solids,%
+62932,Solids,%
+62933,Solids,%
+62934,Solids,%
+62935,Solids,%
+62936,Solids,%
+62937,Solids,%
+62938,Solids,%
+62939,Solids,%
+62940,Solids,%
+62941,Solids,%
+62942,Solids,%
+62943,Solids,%
+62947,Bulk density,g/cm3
+62948,Moisture content,g H2O/g
+62949,Moisture content,%
+62966,Temperature,deg C
+62967,Soil-heat flux,W/m2
+62968,Latent-heat flux,W/m2
+62969,Sensible-heat flux,W/m2
+62970,Water vapor pressure,MPa
+63001,Oxidation reduction potential,mV
+63002,Oxidation reduction potential,mV
+63158,Stream water level elevation above NGVD 1929,ft
+63159,Stream water level elevation above NGVD 1929,m
+63160,Stream water level elevation above NAVD 1988,ft
+63161,Stream water level elevation above NAVD 1988,m
+63675,Turbidity,NTU
+63676,Turbidity,NTRU
+63677,Backscatter turbidity,BU
+63678,Attenuation turbidity,AU
+63679,Turbidity,NTMU
+63680,Turbidity,FNU
+63681,Turbidity,FNRU
+63682,Turbidity,FBU
+63683,Turbidity,FAU
+63684,Turbidity,FNMU
+63740,Loss on ignition,%
+64094,Fluorescence at 650-700 nm,%
+64466,Total suspended particles (TSP) in air,ug/m3
+65225,Transparency,cm
+65237,Oxygen-consumption rate,mg O2/g/hr
+66700,Absorbance,AU/cm
+66702,Chemical oxygen demand,mg/l
+68921,pH,std units
+68922,pH,std units
+68923,Loss on ignition,%
+70224,Wave height,ft
+70227,Direction of stream flow,Deg
+70292,Suspended solids,mg/l
+70293,Suspended solids,mg/l
+70299,Suspended solids dried at 110 degrees Celsius,mg/l
+70300,Dissolved solids dried at 180 degrees Celsius,mg/l
+70301,Dissolved solids,mg/l
+70302,Dissolved solids,tons/day
+70303,Dissolved solids,tons/ac ft
+70305,Salinity,g/l
+70310,pH,std units
+70320,Moisture content,%
+70348,Settleable solids,ml/l
+70349,Non-settleable solids,ml/l
+70516,Color,AU/cm
+70971,Light attenuation coefficient,alpha/m
+71820,Density of water sample,g/mL @ 20C
+71835,Oxygen consumed,mg/l
+71840,Oxygen consumed,mg/l
+71860,Sodium carbonate,mg/l CaCO3
+72001,Depth of hole,ft
+72002,Depth to top of water-bearing zone,ft
+72003,Depth to bottom of water-bearing zone,ft
+72008,Depth of well,ft
+72010,Fluid resistivity,ohm-meters
+72012,Temperature,deg C
+72013,Specific gravity,None
+72014,Temperature,deg C
+72015,Depth to top of sample interval,ft
+72016,Depth to bottom of sample interval,ft
+72019,Depth to water level,ft
+72020,Elevation above NGVD 1929,ft
+72021,Reservoir storage,cfs-days
+72022,Reservoir storage,Mgal
+72024,Pond storage,gal
+72025,Depth of reservoir,ft
+72040,Drawdown observed,ft
+72106,Elevation of sample,ft
+72122,Discharge,ft3/s
+72123,Discharge,ft3/s
+72124,Net radiation (net solar + net long wave radiation),W/m2
+72125,Atmospheric water vapor pressure,kPa
+72127,Atmospheric saturated water vapor pressure,kPa
+72128,Potential latent heat flux,W/m2
+72129,Potential evapotranspiration (PET),mm/hr
+72130,Potential evapotranspiration (PET),mm/hr
+72131,Precipitation,mm/hr
+72132,Soil heat flux at soil surface,W/m2
+72133,Soil water matric potential,neg bar
+72134,Change in heat flux density,W/m2
+72135,Evapotranspiration total,inches/day
+72136,Hydrostatic head difference,mm
+72137,Discharge,ft3/s
+72138,Discharge,m3/sec
+72139,Discharge,gal/min
+72149,Stream velocity,m/sec
+72150,Groundwater level relative to Mean Sea Level (MSL),ft
+72151,Water column pressure,psi
+72159,Evapotranspiration,mm/d
+72164,Barometric pressure (BP),ft of H2O
+72167,Matric potential or pressure head,cm
+72168,Stream velocity,ft/sec
+72169,Stream velocity,m/s
+72170,Stage,ft
+72171,Stage,meters
+72172,Wave height,ft
+72173,Wave period,seconds
+72174,Longwave radiation,W/m2
+72175,Longwave radiation,W/m2
+72177,Groundwater discharge,cm/d
+72178,Water depth,meters
+72179,Shortwave solar radiation,W/m2
+72180,Evapotranspiration,inches
+72181,Moisture content,number
+72182,Atmospheric water vapor density,g/m3
+72183,Inflow,gal/day
+72184,Visible radiation (average flux density),uE/m2/sec
+72185,Shortwave radiation,W/m2
+72186,Shortwave radiation,W/m2
+72187,Transparency,in
+72188,Turbidity,NTRU
+72189,Snow depth,m
+72190,Velocity at point in stream,m/sec
+72192,Precipitation,in
+72193,Net radiation (net solar + net long wave radiation),W/m2
+72194,Precipitation,mm
+72198,Snow depth,ft
+72199,Water depth,ft
+72200,Evaporation per recording interval,mm
+72201,Net incident shortwave radiation,W/m2
+72202,Net emitted longwave radiation,W/m2
+72204,Barometric pressure (BP),psi
+72205,Bulk electrical conductance,dS/m
+72206,Sublimation from snowpack,mm
+72207,Albedo,None
+72208,Turbidity,NTU
+72209,Turbidity,FNU
+72211,Density of water sample,g/cm3
+72212,Porosity,None
+72213,Turbidity,FBRU
+72214,Reservoir elevation,ft
+72215,Reservoir elevation,m
+72216,Location of salt front in river,mi
+72223,Soil water matric potential,bar
+72224,Extinction reference absorbance,AU/cm
+72225,Extinction measurement absorbance,AU/cm
+72226,Groundwater level,ft
+72227,Groundwater level,ft
+72228,Groundwater level,ft
+72229,Groundwater level,ft
+72230,Groundwater level,ft
+72231,Groundwater level,ft
+72232,Groundwater level,ft
+72241,Absolute pressure from unvented pressure transducer,mm/Hg
+72242,Tree sap flow,g/hr
+72243,Discharge,ft3/day
+72250,Marsh mat,ft
+72251,Water level above marsh,ft
+72252,Solar radiation,kW/m2
+72253,Soil temperature,deg C
+72263,Density of water sample,g/cm3
+72264,Reservoir elevation above (NYBCD),ft
+72265,Reservoir elevation above (NYBCD),m
+72266,Refractive index of fluid,None
+72269,Wind gust speed,m/sec
+72270,Volume of water,l
+72272,Discharge,ac-ft
+72274,Scour hole bottom elevation above NGVD 1929,ft
+72275,Lake or reservoir elevation above USBRKB Datum,ft
+72276,Tidal water level,ft
+72279,Tidal elevation,ft
+72284,Mean wave height,m
+72285,Mean wave period,seconds
+72286,Significant wave height,m
+72287,Significant wave period,seconds
+72288,Maximum wave height,m
+72289,Mean wave direction,Deg
+72290,Peak wave direction,Deg
+72291,Precipitation,in/min
+72292,Water level elevation above NAVD 1988,ft
+72293,Water level elevation above gage datum,ft
+72294,Mean water velocity for discharge computation,mph
+72321,Stream velocity,mph
+72322,Surface velocity at point in stream,ft/sec
+72323,Surface velocity at point in stream,m/sec
+72324,Radar amplitude,none
+72325,Radar signal to noise quality assurance parameter,dB
+72326,Opposite direction content quality assurance parameter,%
+74019,Flashpoint of potentially organically contaminated water,deg F
+74072,Flow rate,l/sec
+74082,Streamflow,ac-ft
+74207,Moisture content,%
+75969,Barometric pressure,mbar
+80082,Carbonaceous biochemical oxygen demand,mg/l
+80083,Carbonaceous biochemical oxygen demand,mg/l
+80087,Carbonaceous biochemical oxygen demand,mg/l
+80110,Specific gravity at 4 degrees Celsius,None
+81026,Water content of snow,in
+81027,Temperature,deg C
+81029,Temperature,deg C
+81356,Cation exchange capacity,meq/100 g
+81380,Discharge velocity,m/sec
+81381,Discharge duration,minutes
+81395,Storm water flow,mgd
+81798,Precipitation event,in
+81903,Depth to bottom at sample location,ft
+81904,Velocity at point in stream,ft/sec
+81912,Open pressure,psi
+81914,Initial flowing pressure,psi
+81915,Final flowing pressure,psi
+81916,Pressure at bottom of hole,psi
+81917,Temperature at bottom of hole,deg F
+82015,Mean depth of lake,ft
+82016,Maximum depth of lake,ft
+82047,Depth to top of sampling interval,m
+82048,Depth to bottom of sampling interval,m
+82049,Deoxygenation constant (k1 to base 10),20C/day
+82050,Reoxygenation constant (k2 to base 10),20C/day
+82079,Turbidity,NTU
+82127,Wind speed,knots
+82130,Ice thickness,ft
+82131,Ice thickness,m
+82132,Deoxygenation constant (k1 to base e),20C/day
+82133,Deoxygenation constant (k1 to base e),20C/day
+82134,Deoxygenation constant (k1 to base 10),20C/day
+82135,Reaction lag time,days
+82136,Reaction lag time,days
+82137,Reaction lag time,days
+82259,Street debris smaller than 0.031 millimeters,%
+82260,Street debris smaller than 0.0625,%
+82261,Street debris smaller than 0.125 millimeters,%
+82262,Street debris smaller than 0.25 millimeters,%
+82263,Street debris smaller than 0.5 millimeters,%
+82264,Street debris smaller than 1 millimeter,%
+82265,Street debris smaller than 2 millimeters,%
+82266,Street debris smaller than 4 millimeters,%
+82285,Rate of dry deposition,mg/m2/day
+82286,Solids in rainfall,mg/l
+82300,Snow depth,in
+82363,Dry deposition,mg/m2
+82371,Precipitation within 3 days before sample collection,in
+82372,Precipitation within 14 days before sample collection,in
+82375,Solids,g/m2/day
+82379,Street solids load removed by sweeping,lb/curb-mi
+82380,Street solids total dry weight,lb/curb-mi
+82381,Precipitation total,in
+82463,Total solids dried at 105 degrees Celsius,mg/kg
+82464,Insoluble solids dried at 105 degrees Celsius,mg/kg
+82465,Soluble solids dried at 105 degrees Celsius,mg/kg
+82466,Total solids,mg/kg
+82467,Insoluble solids,mg/kg
+82468,Soluble solids,mg/kg
+82550,Osmotic pressure,mosm/kg
+82583,pH,std units
+82903,Depth to bottom from water surface,m
+82923,Atmospheric deposition type,code
+83104,pH,std units
+83106,pH,std units
+83107,pH,std units
+83150,Specific conductance,uS/cm @25C
+83151,Specific conductance,uS/cm @25C
+83153,Specific conductance,uS/cm @25C
+83154,Specific conductance,uS/cm @25C
+83155,Specific conductance,uS/cm @25C
+83156,Specific conductance,uS/cm @25C
+83177,Atmospheric deposition,l
+83205,Atmospheric deposition type,code
+83386,pH,std units
+83388,pH,std units
+83389,pH,std units
+83432,Specific conductance,uS/cm @25C
+83433,Specific conductance,uS/cm @25C
+83435,Specific conductance,uS/cm @25C
+83436,Specific conductance,uS/cm @25C
+83437,Specific conductance,uS/cm @25C
+83438,Specific conductance,uS/cm @25C
+83459,Atmospheric deposition,l
+84179,Ignitability,code
+84180,Soil horizon,code
+85310,Depth of lake,m
+85311,Depth of lake,m
+85328,Depth to 1 percent of surface light,m
+85540,Air,%
+85541,Inert gases,%
+85555,Gas/water ratio,ft3/barrel
+85557,Temperature,deg C
+85558,Temperature,deg C
+85559,Pressure,psi
+85560,Pressure,psi
+85583,Temperature,deg C
+85588,Gross heating value of dissolved hydrocarbons,Btu/ft3
+85599,Rainfall,cm/sample
+85822,Moisture content,%
+90010,Temperature,deg C
+90034,Depth to 1 percent of surface light,ft
+90077,Transparency,in
+90094,Specific conductance,uS/cm @25C
+90095,Specific conductance,uS/cm @25C
+90096,Specific conductance,uS/cm @25C
+90198,Depth to 10 percent surface light,ft
+90199,Depth to 50 percent surface light,ft
+90200,Incident light intensity,uE/m2/sec
+90400,pH,std units
+90860,Salinity,PSS
+90862,Salinity,PSS
+91011,Solids settleable in 15 minutes,ml/l
+91016,Biochemical oxygen demand,tons/day
+91017,Suspended solids dried at 110 degrees Celsius,tons/day
+91055,Suspended solids dried at 105 degrees Celsius,tons/day
+91056,Loss on ignition of suspended solids,tons/day
+91146,Pump rate,gal/min
+91155,Moisture content,%
+91156,Moisture content,%
+95202,Phycocyanin fluorescence (fPC),#/ml
+95902,Noncarbonate hardness,mg/l CaCO3
+99019,Water level,m
+99020,Elevation above NGVD 1929,m
+99060,Discharge,m3/sec
+99061,Discharge,m3/sec
+99064,Water surface elevation difference between two locations,ft
+99065,Gage height,m
+99066,Hyporheic flux of water from groundwater to surface water,ml/cm2/day
+99067,Water surface elevation difference,ft
+99227,Primary water level,m
+99231,Electrical resistance,ohms
+99232,Volumetric soil moisture content period,ms
+99243,Distance to snow surface from sensor,cm
+99401,Dissolved solids,mg/l
+99402,Suspended solids,mg/l
+99403,Total solids,mg/l
+99433,Dissolved solids,mg/l
+99434,Dissolved solids,tons
+99772,Precipitation,mm
+99872,Turbidity,NTU
+99974,Specific conductance,uS/cm @25C
+99975,pH,std units
+99976,Temperature,deg C
+99978,Specific conductance,uS/cm @25C
+99979,pH,std units
+99980,Temperature,deg C
+99982,Specific conductance,uS/cm @25C
+99983,pH,std units
+99984,Temperature,deg C
+99986,Solar radiation,W/m2
+99987,Solar radiation,MJ/m2
+99988,Photosynthetically active radiation,umol/m2/s
+99989,Photosynthetically active radiation,mmol/m2
+99997,Photosynthetically active radiation,umol/m2/s
