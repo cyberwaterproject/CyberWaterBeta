@@ -6,4 +6,4 @@ api/**/*.pyc
 core/**/*.pyc
 db/**/*.pyc
 gui/**/*.pyc
-**/.__init_.pyc
+**/.__init__.pyc
