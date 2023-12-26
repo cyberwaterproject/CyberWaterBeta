@@ -524,6 +524,35 @@ class CachedInterpreter(vistrails.core.interpreter.base.BaseInterpreter):
         self._streams.append(Generator.generators)
         Generator.generators = []
 
+        def errorReporter(me):
+            import uuid
+            class_type = str(type(me.module)).split('\'')[1]
+            issue_title = class_type + " | " + str(me.msg)
+            issue_label = str(uuid.uuid5(uuid.NAMESPACE_DNS, str(issue_title)))
+            issue_title = "\""+issue_title+"\""
+            issue_body = "\""+str(me.errorTrace)+"\""
+            import subprocess
+            import os
+            label_found = subprocess.check_output("cd "+str(os.getcwd())+'/vistrails '+"&& gh label list --search "+ issue_label, shell=True)
+            if not label_found:
+                subprocess.call("cd "+str(os.getcwd())+'/vistrails '+"&& gh label create "+ issue_label+" --description Unsolved", shell=True)
+                subprocess.call("cd "+str(os.getcwd())+'/vistrails '+"&& gh issue create --label "+issue_label + " --title "+issue_title+" --body "+issue_body, shell=True)
+            else:
+                label_info = label_found.split('\t')
+                label_id = label_info[0]
+                label_desc = label_info[1]
+                from PyQt4 import QtGui
+                if label_desc == "Solved":
+                    issue_closed = subprocess.check_output("cd "+str(os.getcwd())+'/vistrails '+"&& gh issue list --label "+ label_id + " --state closed", shell=True)
+                    issue_info = issue_closed.split('\t')
+                    issue_id = issue_info[0]
+                    issue_label = issue_info[3]
+                    if "Configuration" in issue_label:
+                        comments = subprocess.check_output("cd "+str(os.getcwd())+'/vistrails '+"&& gh issue view "+ issue_id +" --comments", shell=True)
+                        conf_msg = comments.split('\n--\n')[-2]
+                        QtGui.QMessageBox.warning(None, "Warning", conf_msg, QtGui.QMessageBox.Ok)
+                    else:
+                        QtGui.QMessageBox.warning(None, "Warning", "This bug has been resolved, please restart the CyberWater to apply the latest updates.", QtGui.QMessageBox.Ok)
         # Update new sinks
         for obj in persistent_sinks:
             abort = False
@@ -546,6 +575,7 @@ class CachedInterpreter(vistrails.core.interpreter.base.BaseInterpreter):
                     logging_obj.signalError(me.module, me)
                     abort = abort or me.abort
             except ModuleError, me:
+                errorReporter(me)
                 me.module.logging.end_update(me.module, me, me.errorTrace)
                 logging_obj.signalError(me.module, me)
                 abort = me.abort
