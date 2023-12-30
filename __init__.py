@@ -39,6 +39,8 @@
 # If we are running 2.6, since our tests are in the same files as our code,
 # VisTrails might choke up because of missing unittest features
 
+__version__= '1.0.0'
+
 import sys
 try:
     import unittest2
